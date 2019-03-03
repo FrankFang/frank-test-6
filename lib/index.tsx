@@ -1,1 +1,3 @@
-console.log('hi6')
+const div = document.createElement('div')
+div.innerText='hi'
+document.body.appendChild(div)
