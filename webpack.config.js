@@ -5,6 +5,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    alias: {
+      fui: path.resolve(__dirname, './lib/index.tsx')
+    }
   },
   output: {
     path: path.resolve(__dirname, 'dist/lib'),
