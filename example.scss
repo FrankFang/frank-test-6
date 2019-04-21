@@ -7,6 +7,9 @@ a { text-decoration: none; color: inherit; }
 $padding: 16px;
 $main-color: #00ADB5;
 $border-color: #eee;
+body {
+  font-size: 16px;
+}
 .site-page {
   background: #ffffff;
 }
@@ -35,12 +38,19 @@ $border-color: #eee;
     font-size: 18px;
   }
   ul {
-    padding: 0 $padding;
     min-width: 12em;
     > li {
-      padding: 8px 0;
       a {
-        color: $main-color;
+        color: #333;
+        display: block;
+        padding: 8px $padding;
+        &:hover {
+          color: $main-color;
+        }
+        &.active {
+          color: white;
+          background: $main-color;
+        }
       }
     }
   }
