@@ -4,6 +4,9 @@
 ul, ol {list-style: none;}
 h1, h2, h3, h4, h5, h6 {font-weight: normal;}
 a { text-decoration: none; color: inherit; }
+pre {
+  font-family: "Fira Code Medium", Consolas, monospace;
+}
 $padding: 16px;
 $main-color: #00ADB5;
 $border-color: #eee;
@@ -61,4 +64,7 @@ body {
   color: #666;
   padding: 16px 0;
   border-top: 1px solid $border-color;
+}
+.example {
+  padding: 16px 0;
 }
